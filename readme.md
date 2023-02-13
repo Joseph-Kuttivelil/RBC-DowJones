@@ -7,7 +7,9 @@ The inbuilt tomcat server is used for hosting the server.
 
 ### How to start the App
 
-use the command `java -jar dowjones-0.0.1-SNAPSHOT.jar com.rbc.assessment.dowjones.DowjonesApplication` to start the application
+Use the command `java -jar dowjones-0.0.1-SNAPSHOT.jar com.rbc.assessment.dowjones.DowjonesApplication` to start the application
+Have provided the jar file in the main folder itself.
+Sample curl commands are at the bottom of the page
 
 ### API's
 
