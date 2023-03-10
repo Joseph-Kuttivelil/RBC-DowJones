@@ -17,7 +17,7 @@ The Application has 3 API's
 
 * `GET /dowjones/stockprice/{tickerName}` : This will get the stock price values for a particular ticker
 * `POST /dowjones/stockprice` : This will add a stock price to the database
-* `POST /dowjones/stockprice` :  This will add multiple (bulk) stock prices at once into the db
+* `POST /dowjones/stockprices` :  This will add multiple (bulk) stock prices at once into the db
 
 ### Features that can be added
 
@@ -33,7 +33,8 @@ The Application has 3 API's
 
 * ```
   curl --location --request GET 'http://localhost:8081/dowjones/stockprice/AA'
-* ```curl --location --request POST 'http://localhost:8081/dowjones/stockprice' \
+* ```
+  curl --location --request POST 'http://localhost:8081/dowjones/stockprice' \
    --header 'Content-Type: application/json' \
    --data-raw '{
        "quarter": 1,
@@ -53,7 +54,8 @@ The Application has 3 API's
        "days_to_next_dividend": 12,
        "percent_return_next_dividend": 0.189994
    }'
-* ```curl --location --request POST 'http://localhost:8081/dowjones/stockprices/' \
+* ```
+  curl --location --request POST 'http://localhost:8081/dowjones/stockprices/' \
      --header 'Content-Type: application/json' \
      --data-raw '[{
      
